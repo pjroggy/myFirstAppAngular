@@ -1,0 +1,16 @@
+<p *ngIf="!isPremium">l’utilisateur X est premium</p>
+<p *ngIf="isPremium">l’utilisateur X est pauvre!!!</p>
+
+<ul *ngIf="!isPremium">
+    <li *ngFor="let serie of seriesWatched">{{serie}}</li>
+</ul>
+
+<ul>
+    <li *ngIf="isPremium">Vous pouvez regarder jusqu'à 10 épisodes aujourd'hui</li>
+    <li *ngIf="isPremium">
+        <button (click)="hidePremium()">"Passez premium pour 666 $ ?"</button>
+    </li>
+    <li *ngIf="!isPremium">
+        <button (click)="hidePremium()">"Se désabonner ? (et redevenir pauvre...)"</button>
+    </li>
+</ul>
