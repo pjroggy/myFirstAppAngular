@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
   title = 'challengeInput';
+
+  onomatopoeiaList: string[] = ["prout", "burp", "haaaaa", "oups"];
+
+  onReceiveNewOnomatopia(newOnomatopia: string): void{
+    this.onomatopoeiaList.push(newOnomatopia)
+  }
 }

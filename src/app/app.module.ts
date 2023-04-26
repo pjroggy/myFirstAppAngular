@@ -8,6 +8,10 @@ import { SkillComponent } from './skill/skill.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { HeaderComponent } from './header/header.component';
+// import { FormulaireComponent } from './formulaire/formulaire.component';
+import { ListeOnomatopComponent } from './liste-onomatop/liste-onomatop.component';
+import { CreateOnomatopiaComponentComponent } from './create-onomatopia-component/create-onomatopia-component.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +20,15 @@ import { HeaderComponent } from './header/header.component';
     SkillComponent,
     ParentComponent,
     ChildComponent,
-    HeaderComponent
+    HeaderComponent,
+    // FormulaireComponent,
+    ListeOnomatopComponent,
+    CreateOnomatopiaComponentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

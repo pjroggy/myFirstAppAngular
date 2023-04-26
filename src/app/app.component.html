@@ -2,4 +2,10 @@
     <a [routerLink]="['/parents']">parent</a>
 </header>
 
+<div *ngFor="let onomatopia of onomatopoeiaList">{{onomatopia}}</div>
+
+<app-create-onomatopia-component (sendOnomatopiaToParent)="onReceiveNewOnomatopia($event)">
+
+</app-create-onomatopia-component>
+
 <router-outlet></router-outlet>
