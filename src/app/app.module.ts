@@ -16,7 +16,7 @@ import { ROUTES } from './app.routes';
     ContactComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [],
