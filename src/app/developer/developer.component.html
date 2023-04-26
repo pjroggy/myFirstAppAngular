@@ -1,0 +1,14 @@
+<div>
+    <p>{{developerList.firstName}}</p>
+    <p>{{developerList.lastName}}</p>
+    <p>{{developerList.age}}</p>
+    <p>{{developerList.bio}}</p>
+    <p>{{developerList.gender}}</p>
+
+    <div *ngFor="let skill of developerList.skills">
+        <app-skill
+        [toto]="skill"
+        ></app-skill>
+    </div>
+
+</div>
